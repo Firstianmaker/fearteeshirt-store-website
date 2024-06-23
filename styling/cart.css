@@ -1,0 +1,24 @@
+:root {
+  --primary: #11a58f;
+  --bg: #ffffff;
+  --sec: #010101;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  top: 0;
+}
+
+body {
+  font-family: "Zen Dots", sans-serif;
+  color: #010101;
+  min-height: 500px;
+  scroll-behavior: smooth;
+}

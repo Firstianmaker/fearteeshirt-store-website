@@ -1,0 +1,48 @@
+:root {
+  --primary: #11a58f;
+  --bg: #ffffff;
+  --sec: #010101;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Zen Dots", sans-serif;
+  color: #fff;
+  min-height: 500px;
+  scroll-behavior: smooth;
+  background-color: #010101;
+}
+
+#menu {
+  display: none;
+}
+
+.login-section {
+  width: 100%;
+  position: relative;
+}
+
+.mylogin img {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.mylogin h1 {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+}

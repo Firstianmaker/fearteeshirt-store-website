@@ -1,0 +1,258 @@
+:root {
+  --primary: #11a58f;
+  --bg: #ffffff;
+  --sec: #010101;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Zen Dots", sans-serif;
+  color: #fff;
+  min-height: 500px;
+  scroll-behavior: smooth;
+}
+
+.my-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 3%;
+  background: transparent;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  margin-top: 2%;
+}
+
+.my-navbar .my-navbar-logo {
+  font-size: 1.5rem;
+  color: #010101;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  /* margin-right: 25%; */
+}
+
+/* .navbar .navbar-nav {
+  margin-right: 18%;
+} */
+
+span {
+  color: var(--primary);
+}
+
+.my-navbar .my-navbar-nav a {
+  color: #010101;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+  padding-top: 0.5rem;
+  text-decoration: none;
+}
+
+.my-navbar .my-navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.my-navbar .my-navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.4s linear;
+}
+
+.my-navbar .my-navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.my-navbar .my-navbar-extra {
+  display: flex;
+}
+
+.my-navbar .my-navbar-extra input {
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 0.3rem;
+}
+
+.my-navbar .my-navbar-extra input::placeholder {
+  text-align: center;
+  /* padding: 6rem; */
+  color: #010101;
+}
+
+.my-navbar .my-navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.my-navbar .my-navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#menu {
+  display: none;
+}
+
+/* carousel */
+.carousel img {
+  border-radius: 1rem;
+}
+
+.carousel-caption h5 {
+  color: white;
+}
+.carousel-caption p {
+  color: white;
+}
+
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+  filter: none;
+}
+
+.carousel-indicators button {
+  color: white;
+}
+
+.my-collection-card:hover {
+  /* border: 1px solid black; */
+  border-radius: 1rem;
+  padding: 0 0;
+  transform: scale(1.04);
+  transition: all 0.3s ease-in-out;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  html {
+    font-size: 63%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .my-navbar {
+    justify-content: space-between;
+  }
+
+  .my-navbar .my-navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--primary);
+    width: 20rem;
+    height: 100vh;
+    transition: 0.7s;
+  }
+
+  .my-navbar .my-navbar-nav.active {
+    right: -20%;
+  }
+
+  .my-navbar .my-navbar-nav a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .my-navbar .my-navbar-nav a:hover {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .my-navbar .my-navbar-nav a::after {
+    transform-origin: 0 0;
+    border-bottom: 0.1rem solid var(--bg);
+  }
+
+  .my-navbar .my-navbar-nav a:hover::after {
+    transform: scaleX(0.4);
+  }
+
+  .my-navbar .my-navbar-logo {
+    margin-right: 20%;
+  }
+
+  .my-navbar .my-navbar-extra input {
+    width: 160px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .my-navbar.my-navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--primary);
+    width: 20rem;
+    height: 100vh;
+    transition: 0.7s;
+  }
+
+  .my-navbar.my-navbar-nav.active {
+    right: 0;
+  }
+
+  .my-navbar.my-navbar-nav a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .my-navbar.my-navbar-nav a:hover {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .my-navbar.my-navbar-nav a::after {
+    transform-origin: 0 0;
+    border-bottom: 0.1rem solid var(--bg);
+  }
+
+  .my-navbar.my-navbar-nav a:hover::after {
+    transform: scaleX(0.4);
+  }
+
+  .my-navbar.my-navbar-logo {
+    font-size: 1.2rem;
+    margin-right: 15%;
+  }
+
+  .my-navbar .my-navbar-extra input {
+    width: 120px;
+  }
+}
+
+/* LAPTOP */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
